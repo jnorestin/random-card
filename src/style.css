@@ -1,4 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
 .card {
   display: flex;
   align-items: center;
@@ -7,15 +8,19 @@
   width: 200px;
   padding: 20px;
   justify-content: center;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 20px 20px 50px #00d2c6, -30px -30px 60px #4dff00;
 
   border-radius: 15px;
   border: 2px solid black;
-  font-size: 60px;
+  font-size: 90px;
   position: relative;
 }
 .card::before {
   position: absolute;
-  top: -9px;
+  top: 9px;
   left: 20px;
   font-size: 60px;
 }
@@ -44,4 +49,10 @@
 .diamonds::before,
 .diamonds::after {
   content: "\2666";
+}
+.text {
+  background: #e0e5ec;
+  box-shadow: 10px 10px 20px #bdc9d7, -10px -10px 20px #ffffff;
+  border-radius: 20px;
+  padding: 20px;
 }
